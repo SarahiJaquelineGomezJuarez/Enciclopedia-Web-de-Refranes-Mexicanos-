@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo | Enciclopedia Web de Refranes Mexicanos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  Bootstrap 5.3.8 (LOCAL) -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+  <!--  CSS Personalizado -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- =========================
+        NAVBAR
+       ========================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark glass">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        Refranes Mexicanos
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="catalogo_mockup.html">Catálogo</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="amor.html">Amor</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="trabajo.html">Trabajo</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="reflexion.html">Reflexión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- =========================
+        BANNER (ABUELO)
+       ========================= -->
+  <section class="container my-5">
+    <div class="banner-catalogo">
+      <div class="row g-0">
+
+        <!-- TEXTO -->
+        <div class="col-lg-6 p-4 d-flex align-items-center">
+          <div>
+            <h1 class="fw-bold">Catálogo de Refranes</h1>
+
+            <p class="text-muted mb-3">
+              Consulta el listado general de refranes y accede por categoría de forma rápida.
+            </p>
+
+            <a href="amor.html" class="btn btn-warning btn-sm me-2">Amor</a>
+            <a href="trabajo.html" class="btn btn-warning btn-sm me-2">Trabajo</a>
+            <a href="reflexion.html" class="btn btn-warning btn-sm">Reflexión</a>
+          </div>
+        </div>
+
+        <!--  IMAGEN DEL ABUELO  -->
+        <div class="col-lg-6">
+          <div class="banner-img"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================
+        LISTADO GENERAL
+       ========================= -->
+  <section class="container my-5">
+    <h2 class="fw-bold mb-4">Lista general de refranes</h2>
+
+    <div class="row g-4">
+
+      <!--  AMOR -->
+      <div class="col-md-4">
+        <div class="card custom h-100">
+          <div class="card-img-top bg-img"
+               style="background-image: url('assets/img/escena_compromiso_familiar.jpeg');">
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Amor</h5>
+
+            <p class="card-text">
+              Refranes enfocados en el amor, la familia y las relaciones.
+            </p>
+
+            <a href="amor.html" class="btn btn-warning btn-sm">Entrar</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!--  TRABAJO -->
+      <div class="col-md-4">
+        <div class="card custom h-100">
+          <div class="card-img-top bg-img"
+               style="background-image: url('assets/img/escena_trabajo_esfuerzo.jpeg');">
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Trabajo</h5>
+
+            <p class="card-text">
+              Refranes que hablan del esfuerzo, disciplina y responsabilidad.
+            </p>
+
+            <a href="trabajo.html" class="btn btn-warning btn-sm">Entrar</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ✅ REFLEXIÓN -->
+      <div class="col-md-4">
+        <div class="card custom h-100">
+          <div class="card-img-top bg-img"
+               style="background-image: url('assets/img/escena_analisis_documentos.jpeg');">
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Reflexión</h5>
+
+            <p class="card-text">
+              Refranes para pensar, aprender y reflexionar sobre la vida.
+            </p>
+
+            <a href="reflexion.html" class="btn btn-warning btn-sm">Entrar</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================
+        FOOTER
+       ========================= -->
+  <footer class="footer py-4">
+    <div class="container text-center">
+      <p class="mb-0">
+        © 2026 – Enciclopedia Web de Refranes Mexicanos
+      </p>
+    </div>
+  </footer>
+
+
+  <!--  Bootstrap JS (LOCAL) -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+

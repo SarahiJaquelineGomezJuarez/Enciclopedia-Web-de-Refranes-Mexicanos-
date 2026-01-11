@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Catálogo | Enciclopedia de Refranes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--  Bootstrap 5.3.8 (LOCAL) -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    /* =========================================================
+        ESTA PÁGINA ES "MOCKUP BLANCO" 
+       - Sin navbar
+       - Con fondo negro afuera + hoja blanca al centro
+       ========================================================= */
+
+    body{
+      background:#1f1f1f;    /* fondo oscuro como tu captura */
+      margin:0;
+      font-family: Arial, sans-serif;
+      color:#000;
+    }
+
+    /* Título "CATALOGO" arriba (sobre el fondo oscuro) */
+    .top-label{
+      color:#9aa0a6;
+      font-weight:700;
+      letter-spacing:1px;
+      font-size:14px;
+      margin:18px 0 8px 22px;
+      text-transform: uppercase;
+    }
+
+    /* Hoja blanca centrada */
+    .sheet{
+      background:#fff;
+      width: 920px;          /* tamaño tipo “hoja” */
+      max-width: calc(100% - 40px);
+      margin: 0 auto 30px;
+      padding: 22px 26px;
+      border-radius: 2px;
+    }
+
+    /* Menú superior (como tu mockup) */
+    .menu-row{
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      font-size:11px;
+      font-weight:700;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+    .menu-row a{
+      color:#000;
+      text-decoration:none;
+      margin-left:18px;
+    }
+
+    /* Layout principal: izquierda (imagen + lista) y centro (texto) */
+    .layout{
+      display:grid;
+      grid-template-columns: 260px 1fr; /* izquierda angosta, centro ancho */
+      gap: 18px;
+      align-items:start;
+    }
+
+    /* Imagen del abuelo (arriba izquierda) */
+    .img-abuelo{
+      width: 235px;          /* tamaño similar al mockup */
+      height: auto;
+      display:block;
+      margin: 4px 0 10px 0;  /* pegada a la izquierda */
+    }
+
+    /* Texto de la columna izquierda */
+    .left-col{
+      font-size:11px;
+      line-height:1.35;
+    }
+    .left-col .bold{
+      font-weight:700;
+      margin: 0 0 8px 0;
+    }
+    .left-col p{
+      margin: 0 0 8px 0;
+    }
+
+    /* Columna centro (texto principal) */
+    .center-col{
+      font-size:11px;
+      line-height:1.55;
+      text-align: justify;
+    }
+    .center-col h2{
+      font-size:13px;
+      font-weight:700;
+      margin: 0 0 8px 0;
+    }
+
+    /* Botón SALIR abajo a la derecha */
+    .exit-row{
+      display:flex;
+      justify-content:flex-end;
+      margin-top: 14px;
+    }
+    .btn-salir{
+      background:#111;
+      color:#fff;
+      text-decoration:none;
+      font-size:10px;
+      padding: 6px 16px;
+      border-radius:3px;
+      display:inline-block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--  Etiqueta superior como tu imagen -->
+  <div class="top-label">CATALOGO</div>
+
+  <!--  Hoja blanca -->
+  <main class="sheet">
+
+    <!--  Menú superior (sin navbar) -->
+    <div class="menu-row">
+      <div>ENCICLOPEDIA DE REFRANES</div>
+      <div>
+        <a href="amor.html">AMOR</a>
+        <a href="trabajo.html">TRABAJO</a>
+        <a href="reflexion.html">REFLEXION</a>
+      </div>
+    </div>
+
+    <!--  Contenido EXACTO en orden -->
+    <section class="layout">
+
+      <!--  IZQUIERDA: imagen del abuelo + lista -->
+      <div class="left-col">
+
+        <!--  IMAGEN CORRECTA: la del abuelo -->
+        <img
+          src="assets/img/catalogo_abuelo.jpeg"
+          alt="Catálogo de refranes"
+          class="img-abuelo"
+        />
+
+        <p class="bold">Grandes refranes cortos (y qué significan)</p>
+        <p class="bold">¿Quién no ha escuchado alguna vez a su padre o abuelo recitarles un refrán?</p>
+        <p>
+          A muchos de nosotros seguro que más de un refrán se nos ha quedado para siempre en la mente
+          y hemos intentado aplicarlo a nuestra vida diaria.
+        </p>
+      </div>
+
+      <!--  CENTRO: texto largo -->
+      <div class="center-col">
+        <h2>¿Para qué sirven contar refranes?</h2>
+
+        <p>
+          No se trata simplemente de decir en voz alta frases graciosas u ocurrencias: los refranes son uno
+          de los elementos clave de la cultura popular, esto significa que tienen la capacidad de expresar mucho
+          en muy pocas palabras, y a menudo, el mensaje que transmiten tiene sus raíces en un conocimiento con
+          siglos de antigüedad, y con prácticas tradicionales. Incluso cuando estas últimas prácticamente han
+          desaparecido en el siglo XXI, estas expresiones que han dejado tras de sí permanecen vivas y forman
+          parte de nuestro lenguaje cotidiano.
+        </p>
+
+        <p style="font-size:10px; margin-top:10px;">
+          Dicho de otra forma, la razón de ser de estos refranes breves es conectarnos con nuestra pasado y
+          proponernos reflexionar acerca de acciones que no deberíamos perder de vista, o por eso que son
+          estudiados de la antropología.
+        </p>
+
+        <!--  Botón SALIR  -->
+        <div class="exit-row">
+          <a class="btn-salir" href="index.html">SALIR</a>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!--  Bootstrap JS (LOCAL) -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
